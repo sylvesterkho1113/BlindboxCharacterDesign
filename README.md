@@ -1,109 +1,109 @@
-# 🎮 Pokémon Mini Game (Weedle vs Minun)
+# 📦 Blindbox Character Design: Pokémon Battle Arena
 
-## 📌 Overview
+[![C++](https://img.shields.io/badge/C%2B%2B-11-blue.svg)](https://isocpp.org/)
+[![OpenGL](https://img.shields.io/badge/OpenGL-Fixed--Function-orange.svg)](https://www.opengl.org/)
+[![Status](https://img.shields.io/badge/Status-Completed-green.svg)]()
 
-This is a **Computer Graphics (OpenGL) based 3D mini game** featuring two Pokémon-inspired characters: **Minun** and **Weedle**. The project demonstrates core computer graphics concepts such as 3D modeling, hierarchical transformations, lighting, texture mapping, and animation using OpenGL and GLUT.
+A high-fidelity **Computer Graphics (OpenGL)** project featuring stylized "Blindbox" versions of **Minun** and **Weedle**. This project demonstrates advanced 3D modeling, hierarchical transformations, dynamic lighting, and interactive animations within a rich village environment.
 
-The scene includes a fully designed battle arena surrounded by a village environment and forest, creating an immersive Pokémon-style battle experience.
+---
+
+## 🌟 Overview
+
+Developed as a group project for the **TCG6223 Computer Graphics** course at Multimedia University (MMU), this application brings the Pokémon world to life through a custom-built 3D engine. The "Blindbox" aesthetic is achieved through clean, primitive-based modeling that emphasizes the collectible figurine look.
+
+### 🎥 Key Highlights
+*   **Dynamic Battle System**: Interactive skills with unique 3D projectiles.
+*   **Immersive Environment**: A circular village architecture with procedural forests and grass.
+*   **Advanced Rendering**: Multi-source lighting, texture mapping, and real-time animations.
 
 ---
 
 ## ✨ Features
 
-### 🧍 3D Character Modeling
+### 🧊 3D Character Modeling (Hierarchical)
+*   **Minun**: Crafted using specialized profile-point surface generation for organic shapes. Includes detailed hand, ear, and expression modeling.
+*   **Weedle**: A complex multi-segmented body structure utilizing hierarchical transformations to simulate a worm-like appearance.
+*   **Primitive Foundation**: Built entirely from spheres, cylinders, disks, and custom-generated surfaces.
 
-* Fully modeled Minun and Weedle characters
-* Built using OpenGL primitives (spheres, cylinders, cubes, quads)
-* Hierarchical structure (head, body, limbs, tail, etc.)
+### 🏘️ Environment & Scene Design
+*   **Village Arc**: 12 modularly designed houses arranged in a perfect circle, all facing the central arena.
+*   **Battle Arena**: A high-tech arena featuring a central **Poké Ball** floor design and HUD screens.
+*   **Procedural Nature**: Randomized forest generation and grass distribution for a natural feel.
+*   **Architecture**: Houses featuring balconies, windows (circle/square), and textured roofs.
 
-### 🌍 Environment Design
+### ⚔️ Combat & Animation
+*   **Minun's "Minus" Strike**: Fires glowing blue 3D minus-sign projectiles.
+*   **Weedle's "Poison Drop"**: Launches purple poison droplet projectiles.
+*   **Smooth Motion**: Time-based animations ensuring consistent speed across different hardware.
 
-* Circular village with multiple houses
-* Forest environment with trees and grass
-* Detailed battle arena with walls and floor
-* Central Poké Ball floor design
-* Lamp posts with colored lighting effects
-
-### ⚔️ Battle & Animation Effects
-
-* Minun attack: blue “minus sign” projectiles
-* Weedle attack: purple poison droplet projectiles
-* Smooth projectile movement animations
-
-### 💡 Graphics & Rendering Features
-
-* OpenGL lighting system (white, red, blue lights)
-* Texture mapping support
-* Wireframe / shaded mode toggle
-* Camera movement and world rotation
-* HUD text display overlay
-
----
-
-## 🧠 Tech Stack
-
-* C / C++
-* OpenGL (GLUT)
-* GLU
-* FreeGLUT
-* JPEG texture libraries
+### 💡 Graphics Engine Details
+*   **Lighting System**: 
+    *   `Light 0`: Ambient white light (The Sun).
+    *   `Light 1`: Red spotlight (Weedle's Side).
+    *   `Light 2`: Blue spotlight (Minun's Side).
+*   **Texture Mapping**: High-quality textures for bricks, wood, and roofing.
+*   **Rendering Modes**: Toggle between full shading and wireframe mode for architectural analysis.
 
 ---
 
 ## 🎮 Controls
 
-| Key        | Action                         |
-| ---------- | ------------------------------ |
-| W A S D    | Move camera/world              |
-| Q / E      | Move up/down                   |
-| Arrow Keys | Rotate view                    |
-| Mouse Drag | Rotate scene                   |
-| HOME       | Reset view                     |
-| ESC        | Exit program                   |
-| F1         | Toggle wireframe / shading     |
-| F2         | Toggle axis display            |
-| F3         | Toggle textures                |
-| F4         | Auto-rotate scene              |
-| F5         | Toggle lighting                |
-| F6         | Toggle white light             |
-| F7         | Toggle red light (Weedle lamp) |
-| F8         | Toggle blue light (Minun lamp) |
-| F9         | Trigger Minun attack skill     |
-| F10        | Trigger Weedle attack skill    |
+| Category | Key | Action |
+| :--- | :---: | :--- |
+| **Movement** | `W` `A` `S` `D` | Move Camera/World |
+| | `Q` / `E` | Fly Up / Down |
+| **Rotation** | `Arrow Keys` | Rotate View |
+| | `Mouse Drag` | Orbit Scene |
+| **Actions** | `F9` | **Minun Skill** (Blue Side) |
+| | `F10` | **Weedle Skill** (Red Side) |
+| **Toggles** | `F1` | Toggle Shading / Wireframe |
+| | `F2` | Toggle Coordinate Axes |
+| | `F3` | Toggle Textures |
+| | `F4` | Toggle Auto-Rotation |
+| | `F5` | Master Lighting Toggle |
+| | `F6` - `F8` | Individual Light Toggles |
+| **System** | `HOME` | Reset Viewport |
+| | `ESC` | Exit Application |
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+*   **Language**: C++
+*   **Graphics API**: OpenGL (Fixed-Function Pipeline)
+*   **Utility Libraries**: 
+    *   **GLUT / FreeGLUT**: Windowing and input management.
+    *   **GLU**: Quadric objects and perspective calculations.
+    *   **JPEG Library**: Handling custom textures (`.jpg`).
 
 ---
 
 ## 📁 Project Structure
 
-```
-project/
-├── ProjectMain.cpp
-├── ProjectMain.hpp
-├── RationalMain.cpp
-├── RationalMain.hpp
-├── CGLab11Utils/
-├── image/
-├── glut32.dll
-├── jpeg62.dll
-├── libjpeg.dll.a
-└── Rational_1E.cbp
+```text
+BlindboxCharacterDesign/
+├── CGLab11Utils/       # Core utility functions & image loaders
+├── image/              # Texture assets (brick, wood, roof)
+├── ProjectMain.cpp     # Main logic, modeling, and rendering
+├── ProjectMain.hpp     # Class definitions & scene hierarchy
+├── RationalMain.cpp    # OpenGL initialization & input callbacks
+├── RationalMain.hpp    # Window & world settings
+├── glut32.dll          # Runtime dependency
+└── Rational_1E.cbp     # Code::Blocks Project File
 ```
 
 ---
 
+## 👥 Contributors (Group Rational - Section 1E)
 
-## 📚 Key Concepts Used
-
-* 3D hierarchical modeling
-* Transformation (translate, rotate, scale)
-* Primitive-based modeling
-* Lighting and shading
-* Texture mapping
-* Animation system using projectile logic
-* OpenGL fixed-function pipeline
+*   **See Chwan Kai** (242UT2449P)
+*   **Teo Jing An** (242UT24490)
+*   **Kho Wei Cong** (242UT2449Z)
+*   **Tee Kian Hao** (242UT244B2)
 
 ---
 
-## 📌 Conclusion
+## 📝 License
 
-This project demonstrates how OpenGL can be used to build a complete interactive 3D environment with animated characters, lighting effects, and structured scene design, simulating a Pokémon-style battle game experience.
+This project was developed for educational purposes at **Multimedia University (MMU)**. All Pokémon assets are inspired by the original designs by Nintendo/Game Freak.
