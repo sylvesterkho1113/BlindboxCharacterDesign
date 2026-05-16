@@ -106,4 +106,4 @@ BlindboxCharacterDesign/
 
 ## 📝 License
 
-This project was developed for educational purposes at **Multimedia University (MMU)**. All Pokémon assets are inspired by the original designs by Nintendo/Game Freak.
+This project was developed for educational purposes at **Multimedia University (MMU)**.
